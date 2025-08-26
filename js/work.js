@@ -9,9 +9,9 @@ logItems("array");
 //2.
 function calculateEngravingPrice(message, pricePerWord) {
   let word = message.split(` `);
-  return word.lenght * pricePerWord;
+  return word.length * pricePerWord;
 }
-console.log(calculateEngravingPrice(""));
+console.log(calculateEngravingPrice("hello my name is anastasia", 310));
 
 //3.
 function findLongestWord(string) {
@@ -25,10 +25,17 @@ function findLongestWord(string) {
   return longestWord;
 }
 
+console.log(findLongestWord("hello my name is anastasia"));
+
 //4.
 function formatString(string) {
   return string.length <= 40 ? string : string.slice(0, 40) + "...";
 }
+console.log(
+  formatString(
+    "Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок"
+  )
+);
 
 //5.
 function checkForSpam(message) {
@@ -36,6 +43,7 @@ function checkForSpam(message) {
   return lowerCaseMessage.includes("spam") || lowerCaseMessage.includes("sale");
 }
 
+console.log(checkForSpam("hello my name is anastasia spam"));
 //6.
 let input;
 const numbers = [];
